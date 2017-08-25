@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="ui-widget">
+    <br /><br /><br /><br /><br />
+    <div style="min-height:330px;padding-left:0%" class=" ui-tabs ui-widget ui-widget-content ui-corner-all">
+        <div class="left">
+            <div class="input-group col-sm-offset-3 col-sm-5">
+                <input type="text" id="searchTextBox" class="input-lg form-control searchTextBox" placeholder="Enter first name or last name" />
+                <span class="input-group-addon search-span" id="searchBtn" onclick="SearchPeople(event)">
+                    <i class="glyphicon glyphicon-search"></i>
+                </span>
+            </div>
+            <div id="blankValidationMsg" class="col-sm-offset-3 col-sm-4" style="color:brown"></div>
+        </div>
+
+        <div id="spinner">        Loading...    </div>
+        <div id="peopleDetails" class="peopleDetails"> </div>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+@Styles.Render("~/Custom/css")
+@Scripts.Render("~/bundles/custom/searchJs")

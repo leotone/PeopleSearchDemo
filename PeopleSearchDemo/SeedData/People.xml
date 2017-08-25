@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<people>
+
+  <detail>
+    <firstname>Harry</firstname>
+    <lastname>Potter</lastname>
+    <dataofbirth>07/31/1980</dataofbirth>
+    <gender>Male</gender>
+    <address>NO.4 Privet Drive,Little Whinging,Surrey,London,UK</address>
+    <interests>
+      Defense Against the Dark Arts,Quidditch
+    </interests>
+    <imagename>HarryPotter.jpg</imagename>
+  </detail>
+
+  <detail>
+    <firstname>Hermione</firstname>
+    <lastname>Granger</lastname>
+    <dataofbirth>09/19/1979</dataofbirth>
+    <gender>Female</gender>
+    <address>Gryffindor,HOGWARTS,Highlands of Scotland</address>
+    <interests>
+      Reading, writing, answering the questions
+    </interests>
+    <imagename>HermioneGranger.jpg</imagename>
+  </detail>
+
+  <detail>
+    <firstname>Ron</firstname>
+    <lastname>Weasley</lastname>
+    <dataofbirth>03/01/1980</dataofbirth>
+    <gender>Male</gender>
+    <address>Village of Ottery St Catchpole,Devon,UK</address>
+    <interests>
+      Fairy Lines,Quidditch
+    </interests>
+    <imagename>RonWeasley.jpg</imagename>
+  </detail>
+
+  <detail>
+    <firstname>Albus</firstname>
+    <lastname>Dumbledore</lastname>
+    <dataofbirth>1/1/1881</dataofbirth>
+    <gender>Male</gender>
+    <address>Principal's Office,HOGWARTS,Highlands of Scotland</address>
+    <interests>
+      Chenber Music,Tenpin Bowling
+    </interests>
+    <imagename>AlbusDumbledore.jpg</imagename>
+  </detail>
+
+  <detail>
+    <firstname>Tom</firstname>
+    <lastname>Riddle</lastname>
+    <dataofbirth>12/31/1926</dataofbirth>
+    <gender>Male</gender>
+    <address>Wool's Orphanage,Lodon,UK</address>
+    <interests>
+      Dark Arts' Parseltongue
+    </interests>
+    <imagename>TomRiddleVoldemort.jpg</imagename>
+  </detail>
+
+</people>

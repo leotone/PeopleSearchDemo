@@ -1,0 +1,153 @@
+﻿/* File Created: February 20, 2015 */
+
+#topGrid {
+    height: 27px;
+    width: 1160px;
+    background-color: #353535;
+    color: White;
+    font-size: 0.923em;
+    text-align: right;
+    line-height: 27px;
+}
+
+#outerGrid {
+    width: 1160px;
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    font-family: Arial;
+    font-size: 1em;
+    background: url(../Images/trial.png);
+}
+
+#logoGrid {
+    height: 81px;
+    background-color: White;
+}
+
+#logo {
+    margin-top: 12px;
+    margin-left: 15px;
+    border: 0;
+}
+
+#topmenuGrid {
+    margin-left: 12px;
+    margin-top: -1px;
+}
+
+    #topmenuGrid div {
+        float: left;
+    }
+
+#mainGrid {
+    background: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 650px;
+    margin-top: 100px
+}
+
+#mainBody {
+    width: 1160px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial;
+    font-size: medium;
+    background: url(../Images/trial.png),linear-gradient(#5B7AA0, #1F2353);
+    background-repeat: repeat-x, repeat;
+}
+
+#mainBody2 {
+    width: 1160px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial;
+    font-size: medium;
+}
+
+#mainBody3 {
+    width: 1160px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial;
+    font-size: medium;
+    background-repeat: repeat-x, repeat;
+}
+
+.topmenu.unselect {
+    display: block;
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    font-size: 1em;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    outline: none;
+    height: 19px;
+}
+
+.separator {
+    float: left;
+    margin-top: 5px;
+    margin-right: 9px;
+    margin-left: 9px;
+    vertical-align: middle;
+}
+
+.topmenu.select {
+    display: block;
+    text-decoration: none;
+    color: #485783;
+    font-size: 1.231em;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 4px solid white;
+    padding-bottom: 9px;
+    padding-top: 10px;
+    outline: none;
+    height: 19px;
+}
+
+#renderGrid {
+    width: 76.5%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#footerGrid {
+    height: 25px;
+    background-color: #ecf5ff;
+    border-bottom: 1px solid #7A9BC3;
+    border-top: 1px solid #7A9BC3;
+}
+
+#footer2Grid {
+    height: 25px;
+    background-color: White;
+    color: #3D4E79;
+}
+
+.appNameStyle {
+    color: #414173;
+    float: right;
+    font-family: arial;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: auto;
+    width: 300px;
+    vertical-align: top;
+}
+
+body {
+    font: 80% Arial, Helvetica, sans-serif;
+}

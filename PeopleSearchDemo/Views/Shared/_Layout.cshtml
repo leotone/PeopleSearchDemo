@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>People Search Demo | @ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="@Url.Content("~/Content/Layout.min.css")" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body id="mainBody">
+    <div id="header">
+        <div id="outerGrid">
+            <div id="topGrid">
+            </div>
+            <div id="logoGrid">
+                <div style="display: table; width: 100%;">
+                    <div style="display: table-row">
+                        <div style="display: table-cell">
+                            <a href="/">
+                                <img id="logo" alt="HC Logo" src="/Images/HealthCatalystLogo.png" />
+                            </a>
+                        </div>
+                        <div style="display: table-cell">
+                            <span class="appNameStyle">People Search</span>
+                        </div>
+                        <div style="display: table-cell">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="topmenuGrid">
+                @*<div>
+                        @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { id = "homeTab", @class = "topmenu unselect" })
+                    </div>
+                    <img class="separator" alt="menu divider" src="/Images/menudivider.png" style="margin: 5px 9px 0px;" />*@
+                <div>
+                    @Html.ActionLink("Search", "Search", "People", new { area = "" }, new { id = "homeTab", @class = "topmenu unselect" })
+                </div>
+                <img class="separator" alt="menu divider" src="/Images/menudivider.png" style="margin: 5px 9px 0px;" />
+                <div>
+                    @Html.ActionLink("New", "New", "People", new { area = "" }, new { id = "homeTab", @class = "topmenu unselect" })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mainGrid" class="clearfix">
+        <div id="renderGrid" style="width: 100%; margin-top: 4px; margin-bottom: 20px;">
+            @RenderBody()
+            <div id="sidebar" style="padding-left: 600px; padding-top: 100px;">
+                @RenderSection("SideBar", required: false)
+            </div>
+        </div>
+    </div>
+    <div id="footerGrid" style="padding-bottom: 5px">
+        @Html.Partial("_Footer")
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

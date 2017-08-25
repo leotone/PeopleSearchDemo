@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model IEnumerable<PeopleSearchDemo.ViewModel.PeopleViewModel>
+
+<div class="ui-widget">
+    <br /><br /><br /><br /><br />
+    <div style="min-height:500px;padding-left:1.3%" class=" ui-tabs ui-widget ui-widget-content ui-corner-all">
+
+        <div class="row-sm-2 col-sm-10 ">
+
+            <div class="form-group">
+                <div class=" col-sm-6">
+                    <input type="text" id="firstName" class="textBox form-control " placeholder="First name" />
+                    @*@Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })*@
+                </div>
+                <div class="form-group col-sm-6  ">
+                    <input type="text" id="lastName" class="textBox form-control " placeholder="Last name" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class=" col-sm-12 ">
+                    <input type="text" id="address" class="textBox form-control" placeholder="Address" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-12 ">
+                    <textarea id="interests" class="textBox form-control" placeholder="Interests"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-8 ">
+                    <label for="formGroupExampleInput">Male:</label>    @Html.RadioButton("Gender", "Male", new { id = "gender", @checked = "ture" })
+                    <label for="formGroupExampleInput">Female:</label>  @Html.RadioButton("Gender", "Female", new { id = "gender" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class=" col-sm-5 ">
+                    <label for="formGroupExampleInput">Birthday</label>
+                    <input type="date" id="dob" class="textBox form-control" placeholder="Enter Birthday" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class=" col-sm-8  ">
+                    <label for="control-label">Image</label>
+                    <input type="file" id="attachment" onchange="ChangeAttachment(event)" class="file  input-files cols-sm-9" />
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-sm-4  ">
+                    <button id="newBtn" onclick="AddPeople()" class="btn btn-success btn-block">Submit</button>
+                </div>
+                <div class="form-group col-sm-8">
+                    <div class="" id="validationMessage">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container top-buffer">
+                <div class="form-group col-sm-8">
+                    <div class="" id="successMessage">
+                    </div>
+                    <div class="" id="errorMessage">
+                        <strong></strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="spinner">        Loading...    </div>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+@Styles.Render("~/Custom/css")
+@Scripts.Render("~/bundles/custom/newJs")

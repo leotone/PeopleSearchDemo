@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    @Html.ActionLink("Search", "Search", "People", new { area = "" }, new { id = "homeTab", @class = "topmenu unselect" })
+</div>
+
+@*<div class="ui-widget">
+        <br /><br />
+        <div style="min-height:330px;padding-left:1.3%" class=" ui-tabs ui-widget ui-widget-content ui-corner-all">
+
+                <div class="form-group">
+                    <div class="col-sm-2  ">
+                        <button type="submit" id="btnSubmit" class="btn btn-success btn-block">Load Data</button>
+                    </div>
+                    <div class="container top-buffer">
+                        <div class="form-group ">
+                            <div class="" id="successMessage" style="color:brown"></div>
+                            <div class="" id="errorMessage" style="color:brown">
+                                <strong></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="spinner">
+                    Loading...
+                </div>
+
+        </div>
+    </div>*@
+
+
+
+@Scripts.Render("~/bundles/jquery")
+@Styles.Render("~/Custom/css")
+@Scripts.Render("~/bundles/custom/indexJs")
