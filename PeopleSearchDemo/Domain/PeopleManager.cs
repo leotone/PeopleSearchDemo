@@ -7,13 +7,17 @@ using PeopleSearchDemo.ViewModel;
 using PeopleSearchDemo.DataAccess;
 using PeopleSearchDemo.Helper;
 using System.Threading.Tasks;
+using PeopleSearchDemo.DependencyInjection;
+using Microsoft.Practices.Unity;
 
 namespace PeopleSearchDemo.Domain
 {
-    public class PeopleManager
+    public class PeopleManager : IPeopleManager
     {
         PeopleContext _db;
         PeopleService _peopleService;
+
+        private IPeopleManager peopleObj;
 
         public PeopleManager()
         {
@@ -26,7 +30,9 @@ namespace PeopleSearchDemo.Domain
         {
             try
             {
-                People people = FindPeople(peopleViewModel, imageBytes);
+                //People people = FindPeople(peopleViewModel, imageBytes);
+                peopleObj = Bootstrapper.Container.Resolve<IPeopleManager>();
+                People people = peopleObj.FindPeople(peopleViewModel, imageBytes);
 
                 return _peopleService.Create(people);
             }

@@ -6,6 +6,8 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Microsoft.Practices.Unity;
+using PeopleSearchDemo.DependencyInjection;
 
 namespace PeopleSearchDemo
 {
@@ -23,6 +25,9 @@ namespace PeopleSearchDemo
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+
+            IUnityContainer container = new UnityContainer();
+            Bootstrapper.Initialize(container); //Initialize Unity
         }
     }
 }
