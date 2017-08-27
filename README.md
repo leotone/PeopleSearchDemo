@@ -22,6 +22,7 @@ The application builds and runs using fresh installations of Microsoft Visual St
 - ASP.Net MVC
 - Entity Framework
 - Moq for Unit Testing
+- Unity for dependency injection
 
 ### Directory Structure
 
